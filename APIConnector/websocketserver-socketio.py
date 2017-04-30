@@ -24,11 +24,11 @@ import eventlet.wsgi
 import json
 import sys
 import socket
-from pymongo import MongoClient
+from pymongo import Connection
 from flask import Flask, render_template
 
-MONGODB_SERVER='192.168.1.140'
-#MONGODB_SERVER = '127.0.0.1'
+#MONGODB_SERVER='192.168.1.140'
+MONGODB_SERVER = '127.0.0.1'
 MONGODB_DB = 'data'
 
 thread = None
@@ -36,12 +36,21 @@ sio = socketio.Server(logger=True, async_mode='eventlet')
 #sio = socketio.Server(async_mode='threading')
 app = Flask(__name__)
 
-mongo_client = MongoClient()
-try:
-    mongo_client = MongoClient(MONGODB_SERVER, 27017)
-except Exception:
-    sys.exit("Failure to connect to the mongo database")
-mongo_db = mongo_client.MONGODB_DB
+
+def mongodb_write(new_dict):
+    '''
+    Write register to the Monto Database
+    '''
+    try:
+        mongo_conn = Connection(MONGODB_SERVER, 27017)
+    except Exception:
+        sys.exit("Failure to connect to the mongo database")
+    db = mongo_conn[MONGODB_DB]
+
+    db2ins = db.db2ins
+    db2ins.insert(new_dict)
+    mongo_conn.close()
+
 
 def background_thread():
     """Example of how to send server generated events to clients."""
@@ -49,7 +58,7 @@ def background_thread():
     while True:
         sio.sleep(10)
         count += 1
-        sio.emit('my response10', {'data': 'Evento gerado pelo servidor'},
+        sio.emit('getdata', {'data': 'Evento gerado pelo servidor'},
                  namespace='/')
 #        sio.emit('getdata', {'data': 'Evento gerado pelo servidor'},
 #                 namespace='/')
@@ -76,8 +85,7 @@ def micro_data(sid, message):
     sio.emit('my response42', {'data': message['data']}, namespace='/')
     new_str = str(message['data']).replace("\'", "\"")
     new_dict = json.loads(new_str)
-    print type(new_dict)
-    print new_str
+    mongodb_write(new_dict)
 #    mongo_db.insert(new_dict)
 
 #    print new_dict['ID']
