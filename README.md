@@ -1,3 +1,4 @@
+Team Flash - Space APPS 2017
 
 
 Impact: this Project innovates in flexible threting of probes from source and acquisition of data, using social networks, sattelites and microcontrolers, device mobile sensors (cellphones / tablets) as well LPWAN sensors integrating many bases of data creating an only vision to the user at Same time that provides to them tecniques of machine learning to analytics and correlation of data.
@@ -7,7 +8,7 @@ The project model allows it to be flexible in terms of growth and data collectio
   - Locations: provided by microcrontollers: probes for captation of relative data and local climatic phenomenon(mass storm, lighting,rains,thunders,etc)
   - Social: provided by human beings throught analisys of public pattern in perfils, beyond of correlationate data correclattionated the location of perfil.
 
-thereby, this project aims to balance pros and cons of traditional source data types creating a point of acceptance both from a commercial point of view and accurate in the analysis of data. Each type of probe hav their own advantages/disadvantages.
+Thereby, this project aims to balance pros and cons of traditional source data types creating a point of acceptance both from a commercial point of view and accurate in the analysis of data. Each type of probe hav their own advantages/disadvantages.
 
 Probes per device:Pros - high accurate rate of generated data - Possibility of calibration and adequacy of sensors to meet specific purposes, Operating scale adjustment - Requires equipment costs - Requite maintenance costs - Require costs in maintenance - High costs in transmission.
 
@@ -18,8 +19,7 @@ Probes provided by social networks:
   - low costs of maintenance
 
 Cons:
-
-False alarmes,need to large sample to reduce percentage of errors
+  - False alarmes,need to large sample to reduce percentage of errors
 
 The project uses free source code, under GPL license. Using the programming languagues C and Python.
 
@@ -36,13 +36,13 @@ Local collect:
   - Operation using real and emulated probes (in case of sensor failure)
   - WIFI signal level also used as local device pickup probe
 
-Social collect
+Social collect:
   - scan of twitters perfils looking for Related patterns to climatic events
   - Intelligent analysis probe, with support for the detection of expressions in English and Portuguese of Brazil
   - Mechanism of detection of natural tragedies based
   - Detection of the level of criticality and prioritization of the message according to the level of detected patterns (earthquakes, tsunamis has more urgency and preference than rain, sun)
 
-No SQL database
+No SQL database:
  - Data storage in appropriate format for searching using NOSQL format
  - Data collection oriented
  - It can store data in different ways without a standard and inflexible structure being defined at the beginning of the project, thus allowing the most diverse types of data coming from different sources without the performance being affected or any change or maintenance is necessary for the insertion of new Fields or data type.
