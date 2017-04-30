@@ -26,6 +26,7 @@ The project uses free source code, under GPL license. Using the programming lang
 It allow us to improve our code using colaborative strcture work provided by Github, where anyone can make a fork of this project, understand the mechanism used for development of the metodology and send suggestions to improve it.
 
 The operations flow of the project is described in the file FluxoProjeto.graphml
+![Build Status](FluxoProjeto.jpg)
 
 All the initial development thereby conclude modules were created during NASA Space apps 2017, where they conclude The following modules:
 
