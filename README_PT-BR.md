@@ -53,12 +53,12 @@ pode fazer o fork do projeto, entender os mecanismos usados para desenvolvimento
 da metodologia e enviar sugestões de mehorias e correções.
 
 O fluxo de operação do projeto é descrito no arquivo FluxoProjeto.graphml
+![Build Status](FluxoProjeto.jpg)
 
 Todo o desenvolvimento inicial assim como os módulos concluidos foram ralizados durante 
 o NASA Space APPS 2017, onde foram concluidos os seguintes módulos:
 
 Coleta local:
-
 - Sonda coletora de dados usando ESP8666-12, utilizando comunicacao de dados sem fio para
   a API coletora de dados
 - Comunicacao usando SocketIO, garantindo alta velocidade na transmissao de eventos ocorridos
