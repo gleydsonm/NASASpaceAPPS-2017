@@ -55,7 +55,7 @@ void CreateStr(){
     jsonsend += "'ID':";
     jsonsend += "'"+MACAD+"',";
     jsonsend += "'data':[";
-    jsonsend += "{'name':'temp','value':'"+(String)temp+"','unit':'Celcius'},";
+    jsonsend += "{'name':'temp','value':'"+(String)temp+"','unit':'Celsius'},";
     jsonsend += "{'name':'humid','value':'"+(String)humi+"','unit':'Percent'},";
     jsonsend += "{'name':'pluv','value':'0','unit':'mm'},"; // Dont have Sensor now
     jsonsend += "{'name':'Signal','value':'"+(String)SIGNAL+"','unit':'dBm'}";
