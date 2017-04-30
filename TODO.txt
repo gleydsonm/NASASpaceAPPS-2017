@@ -1,0 +1,15 @@
+- [x] Social API.
+- [x] Detect language from Social messages.
+- [x] Detect Serverity level of Weather.
+- [x] Include informations in Database.
+- [x] Send event messages, make big scalable.
+- [x] Debug Interface.
+- [x] Modularized interface allowing new types of distributed. (high number sensors and servers)
+- [x] Connection for IoT (ESP9266) with SocketIO.
+- [x] Easy configuration with WPS (Wi-Fi Protected Setup).
+- [x] Network Socket persistent connection.
+
+- [ ] TimeStamps in database updates.
+- [ ] DeepLearning in HDF4 files.
+- [ ] Implement machine Learning Engine.
+- [ ] GUI Interface.
