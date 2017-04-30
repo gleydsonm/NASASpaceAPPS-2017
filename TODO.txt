@@ -8,6 +8,7 @@
 - [x] Connection for IoT (ESP9266) with SocketIO.
 - [x] Easy configuration with WPS (Wi-Fi Protected Setup).
 - [x] Network Socket persistent connection.
+- [x] Data Exchange using JSON, data allow high scalability of sensor (You don't need change codes for add new type of sensor).
 
 - [ ] TimeStamps in database updates.
 - [ ] DeepLearning in HDF4 files.
