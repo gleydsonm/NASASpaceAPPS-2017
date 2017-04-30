@@ -25,10 +25,35 @@ import re
 import ssl
 import socket
 import sys
+import websocket
 from config import *
 
 # Maximum parset twitter args
 MAX_PARSED_MSGS = 4
+
+def on_message(ws, message):
+    '''
+    Event to run when receiving an event
+    '''
+    print "Rcv: %s" % message
+
+def on_send(ws, message):
+    ws.send(message)
+
+def on_error(ws, error):
+    '''
+    Event to run on error
+    '''
+    print "Error: %s" % error
+
+def on_close(ws):
+    '''
+    Event to run on close
+    '''
+    print "### closed ###"
+
+def on_open(ws):
+    ws.send('Conectado:')
 
 
 def connect_url(url):
@@ -96,9 +121,19 @@ def main():
     '''
     Main Twitter scan function
     '''
+    websocket.enableTrace(True)
+    ws = websocket.WebSocketApp("ws://localhost:8775/",
+                                on_message = on_message,
+                                on_error = on_error,
+                                on_close = on_close)
     soup = connect_url('https://twitter.com/gleydsonmazioli')
+    ws.on_open = on_open
+    ws.run_forever()
+
     tweets = parsetweet(soup)
     print tweets
+    on_send(ws, tweets)
+
 
 if __name__ == '__main__':
     main()
