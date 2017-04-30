@@ -1,3 +1,4 @@
+Team Flash - Space APPS 2017
 
 
 Impact: this Project innovates in flexible threting of probes from source and acquisition of data, using social networks, sattelites and microcontrolers, device mobile sensors (cellphones / tablets) as well LPWAN sensors integrating many bases of data creating an only vision to the user at Same time that provides to them tecniques of machine learning to analytics and correlation of data.
