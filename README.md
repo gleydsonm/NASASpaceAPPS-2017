@@ -1,16 +1,17 @@
 Team Flash - Space APPS 2017
 
 Impacto: O projeto inova na tratativa flexivel de sondas de origem e 
-  aquisição de dados, utilizando para isso redes sociais, satelites e
-  microcontroladores, integrando varias bases de dados fornecendo uma
+  aquisiÃ§Ã£o de dados, utilizando para isso redes sociais, satelites e
+  microcontroladores,sensores de dispositivos moveis(celulares/tablets)
+  como tambem sensores LPWAN integrando varias bases de dados fornecendo uma
   visao unica para o usuario ao mesmo tempo que fornecendo para eles
   tecnicas de machine learning para analise e correlacao de dados.
 
 
 O modelo do projeto permite que ele seja flexivel quanto ao crescimento e coletas
-de dados. O projeto é distribuido sob licença GPL, atualmente dividimos as sondas
+de dados. O projeto Ã© distribuido sob licenÃ§a GPL, atualmente dividimos as sondas
 em 3 categorias:
-   - Fora do planeta: Fornecidos por dispositivos, Ex: Satelites, naves espaciais, dados históricos, etc
+   - Fora do planeta: Fornecidos por dispositivos, Ex: Satelites, naves espaciais, dados histÃ³ricos, etc
    - Locais: Fornecidos por microconroladores: sondas para captacao de dados relativos a fenomenos climaticos locais
       (massa de tempestade, raios, trovoes, chuva, etc)
    - Sociais: Fornecidos por seres humanos, atraves da analise de padroes publicados
@@ -49,12 +50,12 @@ as linguagens de programacao C e Python, (descrever outras aqui)
 Ele permite o estudo e aprimoramento constante de seu codigo fonte utilizando
 a estrutura de trabalho colatorativo fornecida pelo Github, onde qualquer um
 pode fazer o fork do projeto, entender os mecanismos usados para desenvolvimento
-da metodologia e enviar sugestões de mehorias e correções.
+da metodologia e enviar sugestÃµes de mehorias e correÃ§Ãµes.
 
-O fluxo de operação do projeto é descrito no arquivo FluxoProjeto.graphml
+O fluxo de operaÃ§Ã£o do projeto Ã© descrito no arquivo FluxoProjeto.graphml
 
-Todo o desenvolvimento inicial assim como os módulos concluidos foram ralizados durante 
-o NASA Space APPS 2017, onde foram concluidos os seguintes módulos:
+Todo o desenvolvimento inicial assim como os mÃ³dulos concluidos foram ralizados durante 
+o NASA Space APPS 2017, onde foram concluidos os seguintes mÃ³dulos:
 
 Coleta local:
 
