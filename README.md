@@ -78,3 +78,4 @@ Coleta Social:
 Banco de dados Nao relacional
 - Armazenamento de dados em formato apropriado para pesquisa utilizando formato NOSQL
 - Orientado a colecoes de dados
+- Pode armazenar dados de diferentes formas sem que uma estrutura padrao e infexivel seja definida no inicio do projeto, assim possibilitando o mais diversos tipos de dados vindo de fontes diferentes sem que a perfomance seja afetada ou qualquer mudanca ou manutencao seja necessaria para a insercao de novos campos ou tipo de dados.
