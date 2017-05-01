@@ -5,7 +5,7 @@
 - [x] Send event messages, make big scalable.
 - [x] Debug Interface.
 - [x] Modularized interface allowing new types of distributed. (high number sensors and servers)
-- [x] Connection for IoT (ESP9266) with SocketIO.
+- [x] Connection for IoT (ESP8266) with SocketIO.
 - [x] Easy configuration with WPS (Wi-Fi Protected Setup).
 - [x] Network Socket persistent connection.
 - [x] Data Exchange using JSON, data allow high scalability of sensor (You don't need change codes for add new type of sensor).
